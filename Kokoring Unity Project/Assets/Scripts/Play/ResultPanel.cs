@@ -22,6 +22,19 @@ public class ResultPanel : MonoBehaviour {
 	public void Show(ResultData data)
 	{
 		gameObject.SetActive(true);
+
+		if (data.starCount > 0)
+		{
+			UserStageData stage = new UserStageData();
+			stage.stageKey = GlobalVeriables.curStageID;
+			stage.starCount = data.starCount;
+
+			GameDataManager.Instance.userData.clearStageDic.Add(stage.stageKey, stage);
+			GameDataManager.Instance.userData.currentStage = stage.stageKey + 1;
+
+			GameDataManager.Instance.SaveUserData();
+		}
+
 		resultData = data;
 		titleText.text = data.titleText;
 		context.text = data.contextText;

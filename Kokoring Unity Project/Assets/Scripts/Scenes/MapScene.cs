@@ -7,8 +7,8 @@ using System.IO;
 
 public class MapScene : MonoBehaviour {
 
-
 	void Start () {
+
 		
 	}
 

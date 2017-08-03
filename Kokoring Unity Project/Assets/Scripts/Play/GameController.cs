@@ -49,7 +49,7 @@ public class GameController {
 			data.titleText = "Level " + GlobalVeriables.curStageID;
 			data.contextText = "Level Completed!";
 			data.buttonText = "Continue";
-			data.starCount = 1;
+			data.starCount = 3 - failCount;
 			Clear();
 			ShowResult(data);
 		}
@@ -83,9 +83,8 @@ public class GameController {
 		else
 		{
 			failCount++;
-			if (failCount > 10)
+			if (failCount > 3)
 			{
-				failCount = 0;
 				ResultData data = new ResultData();
 				data.titleText = "Level " + GlobalVeriables.curStageID;
 				data.contextText = "Level Failed!";

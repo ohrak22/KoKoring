@@ -27,11 +27,11 @@ public class MapTool : MonoBehaviour {
 
 				if (lastStar > 0 && levelDataList[index].starCount == 0)
 				{
-					stage.Setup(levelDataList[index], true);
+					stage.SetupForMapTool(levelDataList[index], true);
 				}
 				else
 				{
-					stage.Setup(levelDataList[index]);
+					stage.SetupForMapTool(levelDataList[index]);
 				}
 
 				lastStar = levelDataList[index].starCount;

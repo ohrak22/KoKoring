@@ -53,6 +53,5 @@ public class QuestionDataTable
 		}
 
 		isLoaded = true;
-
 	}
 }

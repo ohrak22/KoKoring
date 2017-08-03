@@ -4,12 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class StartScene : MonoBehaviour {
 
-	void Start () {
+	public void ClickStart () {
 
 		SceneManager.LoadScene("Map");
 	}
 	
-	void Update () {
-	
-	}
 }
