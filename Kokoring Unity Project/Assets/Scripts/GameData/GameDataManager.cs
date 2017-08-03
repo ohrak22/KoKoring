@@ -19,13 +19,13 @@ public class GameDataManager {
 		}
 	}
 
-	public LevelData levelData = new LevelData();
-	public JellyDataTable jellyTable = new JellyDataTable();
+	public QuestionDataTable questionTable = new QuestionDataTable();
+	public QuestionLevelDataTable questionLevelTable = new QuestionLevelDataTable();
 
 	public void LoadAll()
 	{
-		levelData.Load();
-		jellyTable.Load();
+		questionTable.Load();
+		questionLevelTable.Load();
 	}
 
 }

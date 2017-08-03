@@ -6,7 +6,7 @@ public class StartScene : MonoBehaviour {
 
 	void Start () {
 
-		SceneManager.LoadScene("SimpleMap");
+		SceneManager.LoadScene("Map");
 	}
 	
 	void Update () {
