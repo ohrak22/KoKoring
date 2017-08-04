@@ -54,7 +54,7 @@ public class QuestionDataTool : MonoBehaviour {
 			}
 			if (hasCorrect == false)
 			{
-				Debug.Log("questionID: " + questionDataList[i].questionID);
+				Debug.Log("don't have correct questionID: " + questionDataList[i].questionID);
 			}
 
 			if (correctCount > 1)

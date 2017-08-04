@@ -46,36 +46,21 @@ public class StageButton : MonoBehaviour {
 		}
 	}
 
-	public void SetupForMapTool(StageLevelData data, bool currentStage = false)
+	public void Setup(int stageNum, StageButton defaultButton)
 	{
-		name = data.stageName;
-		stageID = data.id;
-		stageNumber.text = data.id.ToString();
+		name = "Stage " + stageNum;
+		stageNumber.text = stageNum.ToString();
+		stageNumber.font = defaultButton.stageNumber.font;
+		stageNumber.resizeTextForBestFit = defaultButton.stageNumber.resizeTextForBestFit;
+		stageNumber.GetComponent<RectTransform>().sizeDelta = defaultButton.stageNumber.GetComponent<RectTransform>().sizeDelta;
 
-		for (int i = 0; i < 3; i++)
-		{
-			stars[i].SetActive(false);
-		}
-
-		if (data.starCount > 0)
-		{
-			stars[data.starCount - 1].SetActive(true);
-		}
-
-		if (data.starCount > 0 || currentStage)
-		{
-			GetComponent<Image>().color = Color.green;
-		}
-		else
-		{
-			GetComponent<Image>().color = Color.grey;
-		}
 	}
-
+	
 	public void Click()
 	{
 		GlobalVeriables.curStageID = stageID;
 
 		SceneManager.LoadScene("Play");
 	}
+
 }

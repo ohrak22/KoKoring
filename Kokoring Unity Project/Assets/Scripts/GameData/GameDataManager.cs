@@ -36,7 +36,12 @@ public class GameDataManager {
 
 	public void SaveUserData()
 	{
-		string path = Application.streamingAssetsPath + "/" + "UserData.json";
+		string path = Application.streamingAssetsPath + "/UserData.json";
+
+		if (Application.platform == RuntimePlatform.Android)
+		{
+			path = Application.persistentDataPath + "/UserData.json";
+		}
 
 		using (FileStream fs = new FileStream(path, FileMode.Create))
 		{
@@ -50,8 +55,13 @@ public class GameDataManager {
 
 	public void LoadUserData()
 	{
-		string path = Application.streamingAssetsPath + "/" + "UserData.json";
-		
+		string path = Application.streamingAssetsPath + "/UserData.json";
+
+		if (Application.platform == RuntimePlatform.Android)
+		{
+			path = Application.persistentDataPath + "/UserData.json";
+		}
+
 		using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.ReadWrite))
 		{
 			using (StreamReader reader = new StreamReader(fs, Encoding.Default))
@@ -73,7 +83,7 @@ public class GameDataManager {
 			}
 		}
 	}
-	
+
 	public void CreateNewAccount(FileStream fs, string path)
 	{
 		userData = new UserData();

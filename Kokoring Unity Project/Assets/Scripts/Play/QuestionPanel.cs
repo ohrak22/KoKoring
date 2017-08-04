@@ -11,7 +11,6 @@ public class QuestionPanel : MonoBehaviour {
 
 	void Start () {
 
-		GameController.Instance.questionPanel = this;
 	}
 
 	public void Clear()

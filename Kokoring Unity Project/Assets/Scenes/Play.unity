@@ -328,28 +328,18 @@ MonoBehaviour:
       isCorrect: 0
     - answer: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
       isCorrect: 0
-  - sentence: Good bye.
+  - sentence: Nice to meet you.
     questionID: 2
     type: 0
     answers:
-    - answer: "\uC548\uB155\uD558\uC138\uC694."
+    - answer: "\uB0B4\uC77C \uBD10\uC694."
       isCorrect: 0
-    - answer: "\uACE0\uB9C8\uC6CC\uC694."
+    - answer: "\uC815\uB9D0 \uACE0\uB9C8\uC6CC\uC694."
       isCorrect: 0
-    - answer: "\uC798\uAC00\uC694."
+    - answer: "\uB9CC\uB098\uC11C \uBC18\uAC00\uC6CC\uC694."
       isCorrect: 1
-  - sentence: Good night.
-    questionID: 3
-    type: 0
-    answers:
-    - answer: "\uC798\uC790\uC694."
-      isCorrect: 1
-    - answer: "\uC548\uB155\uD558\uC138\uC694."
-      isCorrect: 0
-    - answer: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
-      isCorrect: 0
   - sentence: Thank you.
-    questionID: 4
+    questionID: 3
     type: 0
     answers:
     - answer: "\uACE0\uB9C8\uC6CC\uC694."
@@ -360,20 +350,8 @@ MonoBehaviour:
       isCorrect: 0
     - answer: "\uC88B\uC740 \uC544\uCE68."
       isCorrect: 0
-  - sentence: Good morning.
-    questionID: 5
-    type: 0
-    answers:
-    - answer: "\uC798\uC790\uC694."
-      isCorrect: 0
-    - answer: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
-      isCorrect: 0
-    - answer: "\uACE0\uB9C8\uC6CC\uC694."
-      isCorrect: 0
-    - answer: "\uC88B\uC740 \uC544\uCE68."
-      isCorrect: 1
   - sentence: "\uC548\uB155\uD558\uC138\uC694."
-    questionID: 6
+    questionID: 4
     type: 0
     answers:
     - answer: Hello.
@@ -382,164 +360,180 @@ MonoBehaviour:
       isCorrect: 0
     - answer: Thanks.
       isCorrect: 0
-  - sentence: "\uC798\uAC00\uC694."
+  - sentence: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
+    questionID: 5
+    type: 0
+    answers:
+    - answer: Thank you.
+      isCorrect: 1
+    - answer: Good morning.
+      isCorrect: 0
+    - answer: Hello.
+      isCorrect: 0
+    - answer: Bye.
+      isCorrect: 0
+  - sentence: "\uB9CC\uB098\uC11C \uBC18\uAC00\uC6CC\uC694."
+    questionID: 6
+    type: 0
+    answers:
+    - answer: Good night.
+      isCorrect: 0
+    - answer: Bye.
+      isCorrect: 0
+    - answer: Thank you.
+      isCorrect: 0
+    - answer: Nice to meet you.
+      isCorrect: 1
+  - sentence: "\uC88B\uC740 \uC544\uCE68."
     questionID: 7
     type: 0
     answers:
-    - answer: Good bye.
-      isCorrect: 1
-    - answer: Good morning.
-      isCorrect: 0
     - answer: Good night.
       isCorrect: 0
-  - sentence: "\uC798\uC790\uC694."
+    - answer: Bye.
+      isCorrect: 0
+    - answer: Thank you.
+      isCorrect: 0
+    - answer: Nice to meet you.
+      isCorrect: 1
+  - sentence: "\uC798\uAC00\uC694."
     questionID: 8
     type: 0
     answers:
-    - answer: Hello.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 0
     - answer: Good night.
+      isCorrect: 0
+    - answer: Bye.
+      isCorrect: 0
+    - answer: Thank you.
+      isCorrect: 0
+    - answer: Nice to meet you.
       isCorrect: 1
-  - sentence: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
+  - sentence: "\uC798\uC790\uC694."
     questionID: 9
     type: 0
     answers:
-    - answer: Thank you.
-      isCorrect: 1
-    - answer: Good morning.
-      isCorrect: 0
-    - answer: Hello.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 10
-    type: 0
-    answers:
     - answer: Good night.
       isCorrect: 0
     - answer: Bye.
       isCorrect: 0
     - answer: Thank you.
       isCorrect: 0
-    - answer: Good morning.
+    - answer: Nice to meet you.
       isCorrect: 1
   - sentence: I.
+    questionID: 10
+    type: 0
+    answers:
+    - answer: "\uB098."
+      isCorrect: 1
+    - answer: "\uC5EC\uC790."
+      isCorrect: 0
+    - answer: "\uADF8."
+      isCorrect: 0
+  - sentence: You.
     questionID: 11
     type: 0
     answers:
     - answer: "\uB098."
-      isCorrect: 1
-    - answer: "\uC5EC\uC790."
       isCorrect: 0
     - answer: "\uB0A8\uC790."
       isCorrect: 0
-  - sentence: Woman.
+    - answer: "\uB108."
+      isCorrect: 1
+  - sentence: Apple.
     questionID: 12
     type: 0
     answers:
-    - answer: "\uB098."
+    - answer: "\uBA39\uB2E4."
       isCorrect: 0
-    - answer: "\uB0A8\uC790."
-      isCorrect: 0
-    - answer: "\uC5EC\uC790."
-      isCorrect: 1
-  - sentence: Man.
-    questionID: 13
-    type: 0
-    answers:
-    - answer: "\uC5EC\uC790."
-      isCorrect: 0
-    - answer: "\uB0A8\uC790."
+    - answer: "\uC0AC\uACFC."
       isCorrect: 1
     - answer: "\uC544\uAE30."
       isCorrect: 0
-  - sentence: Girl.
-    questionID: 14
+  - sentence: Eat.
+    questionID: 13
     type: 0
     answers:
-    - answer: "\uB0A8\uC790."
+    - answer: "\uB9C8\uC154\uC694."
       isCorrect: 0
     - answer: "\uC5EC\uC790."
       isCorrect: 0
-    - answer: "\uC18C\uB140."
+    - answer: "\uBA39\uC5B4\uC694."
       isCorrect: 1
     - answer: "\uC18C\uB144."
       isCorrect: 0
-  - sentence: "\uC5EC\uC790."
-    questionID: 15
+  - sentence: "\uB098."
+    questionID: 14
     type: 0
     answers:
-    - answer: Girl.
+    - answer: You.
       isCorrect: 0
     - answer: Boy.
       isCorrect: 0
-    - answer: Woman.
+    - answer: I.
       isCorrect: 1
-  - sentence: "\uB0A8\uC790."
-    questionID: 16
+  - sentence: "\uB108."
+    questionID: 15
     type: 0
     answers:
-    - answer: Man.
+    - answer: You.
       isCorrect: 1
-    - answer: Bye.
+    - answer: Apple.
       isCorrect: 0
     - answer: Thank you.
       isCorrect: 0
     - answer: Boy.
       isCorrect: 0
-  - sentence: "\uC18C\uB140."
-    questionID: 17
+  - sentence: "\uC0AC\uACFC."
+    questionID: 16
     type: 0
     answers:
-    - answer: Good night.
+    - answer: You.
       isCorrect: 0
     - answer: Bye.
       isCorrect: 0
-    - answer: Girl.
+    - answer: Apple.
       isCorrect: 1
-    - answer: Good morning.
+    - answer: I.
       isCorrect: 0
-  - sentence: "\uC18C\uB144."
-    questionID: 18
+  - sentence: "\uBA39\uC5B4\uC694."
+    questionID: 17
     type: 0
     answers:
     - answer: Buy.
       isCorrect: 0
     - answer: Bye.
       isCorrect: 0
-    - answer: Boy.
+    - answer: Eat.
       isCorrect: 1
-    - answer: Good morning.
+    - answer: You.
       isCorrect: 0
-  - sentence: "\uC800\uB294 \uB0A8\uC790\uC785\uB2C8\uB2E4."
-    questionID: 19
+  - sentence: "\uB098\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4\uC694."
+    questionID: 18
     type: 0
     answers:
-    - answer: I am a girl.
+    - answer: I drink coffee.
       isCorrect: 0
     - answer: I am a boy.
       isCorrect: 0
-    - answer: I am a man.
+    - answer: I eat apple.
       isCorrect: 1
-    - answer: I am a woman.
+    - answer: You eat apple.
       isCorrect: 0
-  - sentence: I am a girl.
-    questionID: 20
+  - sentence: You eat Apple!
+    questionID: 19
     type: 0
     answers:
-    - answer: "\uC800\uB294 \uC18C\uB140\uC785\uB2C8\uB2E4."
+    - answer: "\uB098\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4\uC694!"
+      isCorrect: 0
+    - answer: "\uB098\uB294 \uC8FC\uC2A4\uB97C \uB9C8\uC154\uC694!"
+      isCorrect: 0
+    - answer: "\uB108\uB294 \uACFC\uC77C\uC744 \uBA39\uC5B4!"
+      isCorrect: 0
+    - answer: "\uB108\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4!"
       isCorrect: 1
-    - answer: "\uB098\uB294 \uB0A8\uC790\uC57C."
-      isCorrect: 0
-    - answer: "\uB108\uB294 \uC18C\uB140\uC785\uB2C8\uB2E4."
-      isCorrect: 0
-    - answer: "\uC6B0\uB9AC\uB294 \uC5EC\uC790\uC785\uB2C8\uB2E4."
-      isCorrect: 0
   - sentence: He.
-    questionID: 21
+    questionID: 20
     type: 0
     answers:
     - answer: "\uADF8\uB140."
@@ -549,7 +543,7 @@ MonoBehaviour:
     - answer: "\uADF8."
       isCorrect: 1
   - sentence: She.
-    questionID: 22
+    questionID: 21
     type: 0
     answers:
     - answer: "\uADF8\uB140."
@@ -558,126 +552,126 @@ MonoBehaviour:
       isCorrect: 0
     - answer: "\uB098."
       isCorrect: 0
-  - sentence: Apple.
-    questionID: 23
+  - sentence: Coffee.
+    questionID: 22
     type: 0
     answers:
-    - answer: "\uC0AC\uACFC."
+    - answer: "\uCEE4\uD53C."
       isCorrect: 1
     - answer: "\uADF8\uB140."
       isCorrect: 0
-    - answer: "\uC18C\uB140."
+    - answer: "\uC0AC\uACFC."
       isCorrect: 0
     - answer: "\uC548\uB155."
       isCorrect: 0
-  - sentence: eat.
-    questionID: 24
+  - sentence: Drink.
+    questionID: 23
     type: 0
     answers:
-    - answer: "\uBA39\uB2E4."
+    - answer: "\uB9C8\uC154\uC694."
       isCorrect: 1
     - answer: "\uC0AC\uACFC."
       isCorrect: 0
     - answer: "\uADF8\uB140."
       isCorrect: 0
-    - answer: "\uB098."
+    - answer: "\uBA39\uC5B4\uC694."
       isCorrect: 0
   - sentence: "\uADF8\uB294."
-    questionID: 25
+    questionID: 24
     type: 0
     answers:
     - answer: She.
       isCorrect: 0
     - answer: Boy.
       isCorrect: 0
-    - answer: eat.
+    - answer: Eat.
       isCorrect: 0
     - answer: He.
       isCorrect: 1
   - sentence: "\uADF8\uB140\uB294."
-    questionID: 26
+    questionID: 25
     type: 0
     answers:
-    - answer: Good night.
+    - answer: Woman.
       isCorrect: 0
     - answer: She.
       isCorrect: 1
-    - answer: Thank you.
+    - answer: Girl.
       isCorrect: 0
     - answer: I.
       isCorrect: 0
-  - sentence: "\uC0AC\uACFC."
-    questionID: 27
+  - sentence: "\uCEE4\uD53C."
+    questionID: 26
     type: 0
     answers:
     - answer: Boy.
       isCorrect: 0
     - answer: Bye.
       isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Apple.
+    - answer: Coffee.
       isCorrect: 1
-  - sentence: "\uBA39\uB2E4."
-    questionID: 28
+    - answer: Apple.
+      isCorrect: 0
+  - sentence: "\uB9C8\uC154\uC694."
+    questionID: 27
     type: 0
     answers:
     - answer: Buy.
       isCorrect: 0
     - answer: Drink.
-      isCorrect: 0
+      isCorrect: 1
     - answer: Thank you.
       isCorrect: 0
-    - answer: eat.
-      isCorrect: 1
-  - sentence: "\uADF8\uB140\uB294 \uC0AC\uACFC\uB97C \uBA39\uB294\uB2E4."
-    questionID: 29
+    - answer: Eat.
+      isCorrect: 0
+  - sentence: "\uADF8\uB140\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC154\uC694."
+    questionID: 28
     type: 0
     answers:
     - answer: He goes to Apple.
       isCorrect: 0
     - answer: She drinks coffee.
-      isCorrect: 0
-    - answer: She eats an apple.
       isCorrect: 1
+    - answer: She eats an apple.
+      isCorrect: 0
     - answer: Good morning.
       isCorrect: 0
-  - sentence: I eat apple.
+  - sentence: He drinks coffee.
+    questionID: 29
+    type: 0
+    answers:
+    - answer: "\uC18C\uB144\uC740 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
+      isCorrect: 0
+    - answer: "\uADF8\uB140\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
+      isCorrect: 0
+    - answer: "\uADF8\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
+      isCorrect: 1
+    - answer: "\uB098\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
+      isCorrect: 0
+  - sentence: We.
     questionID: 30
     type: 0
     answers:
-    - answer: "\uC18C\uB144\uC740 \uC0AC\uACFC\uB97C \uBA39\uB294\uB2E4."
+    - answer: "\uADF8."
       isCorrect: 0
-    - answer: "\uADF8\uB140\uB294 \uC0AC\uACFC\uB97C \uBA39\uB294\uB2E4."
+    - answer: "\uB098."
       isCorrect: 0
-    - answer: "\uADF8\uB294 \uC0AC\uACFC\uB97C \uBA39\uB294\uB2E4."
-      isCorrect: 0
-    - answer: "\uB098\uB294 \uC0AC\uACFC\uB97C \uBA39\uB294\uB2E4."
+    - answer: "\uC6B0\uB9AC."
       isCorrect: 1
-  - sentence: Drink.
+  - sentence: They.
     questionID: 31
     type: 0
     answers:
-    - answer: "\uBA39\uB294\uB2E4."
+    - answer: "\uADF8\uB140."
       isCorrect: 0
-    - answer: "\uC794\uB2E4."
+    - answer: "\uADF8."
       isCorrect: 0
-    - answer: "\uB9C8\uC2E0\uB2E4."
+    - answer: "\uADF8\uB4E4."
       isCorrect: 1
-  - sentence: Water.
-    questionID: 32
-    type: 0
-    answers:
-    - answer: "\uCEE4\uD53C."
-      isCorrect: 0
-    - answer: "\uC8FC\uC2A4."
-      isCorrect: 0
-    - answer: "\uBB3C."
-      isCorrect: 1
-    - answer: "\uBD88."
+    - answer: "\uC6B0\uB9AC."
       isCorrect: 0
   - sentence: Read.
-    questionID: 33
+    questionID: 32
     type: 0
     answers:
     - answer: "\uC77D\uB294\uB2E4."
@@ -688,44 +682,44 @@ MonoBehaviour:
       isCorrect: 0
     - answer: "\uBB3C."
       isCorrect: 0
-  - sentence: Newspaper.
+  - sentence: Book.
+    questionID: 33
+    type: 0
+    answers:
+    - answer: "\uCC45."
+      isCorrect: 1
+    - answer: "\uCEE4\uD53C."
+      isCorrect: 0
+    - answer: "\uC0AC\uACFC."
+      isCorrect: 0
+    - answer: "\uC2E0\uBB38."
+      isCorrect: 0
+  - sentence: "\uC6B0\uB9AC."
     questionID: 34
     type: 0
     answers:
-    - answer: "\uC2E0\uBB38."
+    - answer: They.
+      isCorrect: 0
+    - answer: We.
       isCorrect: 1
-    - answer: "\uB9C8\uC2E0\uB2E4."
+    - answer: me.
       isCorrect: 0
-    - answer: "\uC794\uB2E4."
+    - answer: You.
       isCorrect: 0
-    - answer: "\uBB3C."
-      isCorrect: 0
-  - sentence: "\uB9C8\uC2E0\uB2E4."
+  - sentence: "\uADF8\uB4E4."
     questionID: 35
     type: 0
     answers:
-    - answer: eat.
+    - answer: We.
       isCorrect: 0
-    - answer: drink.
+    - answer: I.
+      isCorrect: 0
+    - answer: They.
       isCorrect: 1
-    - answer: read.
-      isCorrect: 0
-    - answer: Good.
-      isCorrect: 0
-  - sentence: "\uBB3C."
-    questionID: 36
-    type: 0
-    answers:
-    - answer: night.
-      isCorrect: 0
-    - answer: read.
-      isCorrect: 0
-    - answer: Water.
-      isCorrect: 1
-    - answer: Good.
+    - answer: He.
       isCorrect: 0
   - sentence: "\uC77D\uB294\uB2E4."
-    questionID: 37
+    questionID: 36
     type: 0
     answers:
     - answer: Good.
@@ -736,158 +730,168 @@ MonoBehaviour:
       isCorrect: 0
     - answer: Eat.
       isCorrect: 0
-  - sentence: "\uC2E0\uBB38."
-    questionID: 38
+  - sentence: "\uCC45."
+    questionID: 37
     type: 0
     answers:
-    - answer: Newspaper.
+    - answer: Book.
       isCorrect: 1
-    - answer: EXO.
+    - answer: Newspaper.
       isCorrect: 0
-    - answer: Thank you.
+    - answer: Apple.
       isCorrect: 0
     - answer: Eat.
       isCorrect: 0
-  - sentence: "\uADF8\uB294 \uC2E0\uBB38\uC744 \uC77D\uB294\uB2E4."
-    questionID: 39
+  - sentence: "\uC6B0\uB9AC\uB294 \uCC45\uC744 \uC77D\uB294\uB2E4."
+    questionID: 38
     type: 0
     answers:
-    - answer: He reads a book.
-      isCorrect: 0
-    - answer: He reads the newspaper.
+    - answer: We read a book.
       isCorrect: 1
+    - answer: We read the newspaper.
+      isCorrect: 0
     - answer: She reads the newspaper.
       isCorrect: 0
     - answer: She reads a book.
       isCorrect: 0
-  - sentence: I drink water.
+  - sentence: They read books.
+    questionID: 39
+    type: 0
+    answers:
+    - answer: "\uADF8\uB4E4\uC740 \uC2E0\uBB38\uC744 \uC77D\uB294\uB2E4."
+      isCorrect: 0
+    - answer: "\uADF8\uB4E4\uC740 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
+      isCorrect: 0
+    - answer: "\uADF8\uB4E4\uC740 \uCC45\uC744 \uBC84\uB9B0\uB2E4."
+      isCorrect: 0
+    - answer: "\uADF8\uB4E4\uC740 \uCC45\uC744 \uC77D\uB294\uB2E4."
+      isCorrect: 1
+  - sentence: Movie.
     questionID: 40
     type: 0
     answers:
-    - answer: "\uB098\uB294 \uCC28\uB97C \uB9C8\uC2E0\uB2E4."
+    - answer: "\uADF9\uC7A5."
       isCorrect: 0
-    - answer: "\uB098\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
-      isCorrect: 0
-    - answer: "\uB098\uB294 \uC8FC\uC2A4\uB97C \uB9C8\uC2E0\uB2E4."
-      isCorrect: 0
-    - answer: "\uB098\uB294 \uBB3C\uC744 \uB9C8\uC2E0\uB2E4."
+    - answer: "\uC601\uD654."
       isCorrect: 1
-  - sentence: you.
+  - sentence: Newspaper.
     questionID: 41
     type: 0
     answers:
-    - answer: "\uB098."
-      isCorrect: 0
-    - answer: "\uB108."
-      isCorrect: 1
-  - sentence: milk.
-    questionID: 42
-    type: 0
-    answers:
-    - answer: "\uBB3C."
-      isCorrect: 0
-    - answer: "\uBBF8\uC5ED."
-      isCorrect: 0
-    - answer: "\uC6B0\uC720."
-      isCorrect: 1
-  - sentence: rice.
-    questionID: 43
-    type: 0
-    answers:
-    - answer: "\uBE75."
-      isCorrect: 0
-    - answer: "\uBC25."
-      isCorrect: 1
-    - answer: "\uBB3C."
-      isCorrect: 0
-    - answer: "\uC6B0\uC720."
-      isCorrect: 0
-  - sentence: book.
-    questionID: 44
-    type: 0
-    answers:
-    - answer: "\uBC24."
-      isCorrect: 0
-    - answer: "\uC18C\uB140."
-      isCorrect: 0
     - answer: "\uCC45."
-      isCorrect: 1
+      isCorrect: 0
     - answer: "\uD559\uAD50."
       isCorrect: 0
     - answer: "\uC2E0\uBB38."
-      isCorrect: 0
-  - sentence: "\uB108."
-    questionID: 45
+      isCorrect: 1
+  - sentence: See.
+    questionID: 42
     type: 0
     answers:
-    - answer: I.
+    - answer: "\uC77D\uB2E4."
       isCorrect: 0
-    - answer: You.
+    - answer: "\uBCF4\uB2E4."
+      isCorrect: 1
+    - answer: "\uBA39\uB2E4."
+      isCorrect: 0
+    - answer: "\uB274\uC2A4."
+      isCorrect: 0
+  - sentence: Don't see.
+    questionID: 43
+    type: 0
+    answers:
+    - answer: "\uBCF8\uB2E4."
+      isCorrect: 0
+    - answer: "\uC77D\uB294\uB2E4."
+      isCorrect: 0
+    - answer: "\uC548\uBCF8\uB2E4."
+      isCorrect: 1
+    - answer: "\uC54A\uC77D\uB294\uB2E4."
+      isCorrect: 0
+  - sentence: "\uC601\uD654."
+    questionID: 44
+    type: 0
+    answers:
+    - answer: School.
+      isCorrect: 0
+    - answer: Movie.
       isCorrect: 1
     - answer: He.
       isCorrect: 0
-    - answer: We.
+    - answer: Here.
       isCorrect: 0
-  - sentence: "\uC6B0\uC720."
-    questionID: 46
+  - sentence: "\uC2E0\uBB38."
+    questionID: 45
     type: 0
     answers:
-    - answer: Milk.
+    - answer: Newspaper.
       isCorrect: 1
-    - answer: Water.
+    - answer: Move.
       isCorrect: 0
     - answer: Drink.
       isCorrect: 0
-    - answer: Eat.
+    - answer: Sea.
       isCorrect: 0
-  - sentence: "\uBC25."
-    questionID: 47
+  - sentence: "\uBCF4\uB2E4."
+    questionID: 46
     type: 0
     answers:
     - answer: Bread.
       isCorrect: 0
-    - answer: Rice.
+    - answer: See.
       isCorrect: 1
     - answer: Eat.
       isCorrect: 0
     - answer: Good.
       isCorrect: 0
-  - sentence: "\uCC45."
+  - sentence: "\uC548\uBCF8\uB2E4."
+    questionID: 47
+    type: 0
+    answers:
+    - answer: See.
+      isCorrect: 0
+    - answer: Don't buy.
+      isCorrect: 0
+    - answer: Don't eat.
+      isCorrect: 0
+    - answer: Don't see.
+      isCorrect: 1
+  - sentence: "\uADF8\uB294 \uC601\uD654\uB97C \uBCF8\uB2E4."
     questionID: 48
     type: 0
     answers:
-    - answer: Good.
+    - answer: He does not have a movie.
+      isCorrect: 0
+    - answer: He watches a movie.
+      isCorrect: 1
+    - answer: He reads the newspaper.
+      isCorrect: 0
+    - answer: Do you eat bread?
+      isCorrect: 0
+  - sentence: She does not read the newspaper.
+    questionID: 49
+    type: 0
+    answers:
+    - answer: "\uADF8\uB140\uB294 \uC2E0\uBB38\uC744 \uC548 \uC77D\uB294\uB2E4."
+      isCorrect: 1
+    - answer: "\uADF8\uB140\uB294 \uC601\uD654\uB97C \uC548\uBCF8\uB2E4."
+      isCorrect: 0
+    - answer: "\uADF8\uB140\uB294 \uC2E0\uBB38\uC744 \uC77D\uB294\uB2E4."
+      isCorrect: 0
+    - answer: "\uADF8\uB140\uB294 \uC2E0\uBB38\uC744 \uBCF8\uB2E4."
+      isCorrect: 0
+  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
+    questionID: 50
+    type: 0
+    answers:
+    - answer: Good night.
       isCorrect: 0
     - answer: Bye.
       isCorrect: 0
     - answer: Thank you.
       isCorrect: 0
-    - answer: Book.
+    - answer: Good morning.
       isCorrect: 1
-  - sentence: "\uB108 \uCC45 \uC77D\uB2C8?"
-    questionID: 49
-    type: 0
-    answers:
-    - answer: Do you read newspapers?
-      isCorrect: 0
-    - answer: Do you read a book?
-      isCorrect: 1
-    - answer: Do you drink water?
-      isCorrect: 0
-    - answer: Do you eat bread?
-      isCorrect: 0
-  - sentence: Do you drink milk?
-    questionID: 50
-    type: 0
-    answers:
-    - answer: "\uB108 \uBC25 \uBA39\uB2C8?"
-      isCorrect: 0
-    - answer: "\uB10C \uBB3C \uB9C8\uC2DC\uB2C8?"
-      isCorrect: 0
-    - answer: "\uB108 \uC6B0\uC720 \uB9C8\uC2DC\uB2C8?"
-      isCorrect: 1
-    - answer: "\uB10C \uCEE4\uD53C \uB9C8\uC2DC\uB2C8?"
-      isCorrect: 0
   - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
     questionID: 51
     type: 0
@@ -1476,18 +1480,6 @@ MonoBehaviour:
       isCorrect: 0
     - answer: Good morning.
       isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 100
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
 --- !u!4 &178000794
 Transform:
   m_ObjectHideFlags: 0
@@ -1513,124 +1505,125 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionLevelList:
-  - name: Stage 1
+  - name: "\uC548\uB155\uD558\uC138\uC694."
     stageID: 1
-    questionIDList: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000
-  - name: Stage 2
+    questionIDList: 010000000200000003000000040000000500000006000000
+  - name: "\uB098\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4\uC694."
     stageID: 2
     questionIDList: 0b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000
-  - name: Stage 3
+  - name: "\uADF8\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC154\uC694."
     stageID: 3
     questionIDList: 15000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000
-  - name: Stage 4
+  - name: "\uC6B0\uB9AC\uB294 \uD559\uAD50\uC5D0 \uAC00\uC694."
     stageID: 4
     questionIDList: 1f000000200000002100000022000000230000002400000025000000260000002700000028000000
-  - name: Stage 5
+  - name: "\uB098\uB294 \uB0A8\uC790\uC5D0\uC694."
     stageID: 5
     questionIDList: 290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000
-  - name: Stage 6
+  - name: "\uC544\uC774\uB294 \uC5C4\uB9C8\uB97C \uC0AC\uB791\uD574\uC694."
     stageID: 6
     questionIDList: 330000003400000035000000360000003700000038000000390000003a0000003b0000003c000000
-  - name: Stage 7
+  - name: "\uC544\uAE30\uB294 \uC7A5\uB0A8\uAC10\uC744 \uC88B\uC544\uD574\uC694."
     stageID: 7
     questionIDList: 3d0000003e0000003f00000040000000410000004200000043000000440000004500000046000000
-  - name: Stage 8
+  - name: "\uB098\uB294 \uC0E4\uC6CC\uB97C \uC2EB\uC5B4\uD574\uC694."
     stageID: 8
     questionIDList: 4700000048000000490000004a0000004b0000004c0000004d0000004e0000004f00000050000000
-  - name: Stage 9
+  - name: "\uB098\uB294 \uBC84\uC2A4\uB97C \uD0C0\uC694."
     stageID: 9
     questionIDList: 5100000052000000530000005400000055000000560000005700000058000000590000005a000000
-  - name: Stage 10
+  - name: "\uB098\uB294 \uCC45\uC744 \uC77D\uC5B4\uC694."
     stageID: 10
     questionIDList: 5b0000005c0000005d0000005e0000005f0000006000000061000000620000006300000064000000
-  - name: Stage 11
+  - name: "\uB098\uB294 \uACE0\uAE30\uB97C \uC548\uBA39\uC5B4\uC694."
     stageID: 11
     questionIDList: 65000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e000000
-  - name: Stage 12
+  - name: "\uB098\uB294 \uC8FC\uC2A4\uB97C \uC548\uB9C8\uC154\uC694."
     stageID: 12
     questionIDList: 6f000000700000007100000072000000730000007400000075000000760000007700000078000000
-  - name: Stage 13
+  - name: "\uB098\uB294 \uADF9\uC7A5\uC5D0 \uC548\uAC00\uC694."
     stageID: 13
     questionIDList: 790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000
-  - name: Stage 14
+  - name: "\uC800\uB294 \uD559\uC0DD\uC774 \uC544\uB2C8\uC5D0\uC694."
     stageID: 14
     questionIDList: 830000008400000085000000860000008700000088000000890000008a0000008b0000008c000000
-  - name: Stage 15
+  - name: "\uC800\uB294 \uB18D\uAD6C\uB97C \uC548\uC88B\uC544\uD574\uC694."
     stageID: 15
     questionIDList: 8d0000008e0000008f00000090000000910000009200000093000000940000009500000096000000
-  - name: Stage 16
+  - name: "\uC6B0\uB9AC\uB294 \uC9C0\uAC11 \uC548\uC0AC\uC694."
     stageID: 16
     questionIDList: 9700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000
-  - name: Stage 17
+  - name: "\uC6B0\uB9AC\uB294 \uC120\uD48D\uAE30 \uC548\uD314\uC544\uC694."
     stageID: 17
     questionIDList: a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000
-  - name: Stage 18
+  - name: "\uADF8\uB294 \uAE40\uCE58 \uC548\uB9CC\uB4E4\uC5B4\uC694."
     stageID: 18
     questionIDList: ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000
-  - name: Stage 19
+  - name: "\uADF8\uB140\uB294 \uC601\uD654 \uC548\uBD10\uC694."
     stageID: 19
     questionIDList: b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000
-  - name: Stage 20
+  - name: "\uC544\uB2C8\uC694."
     stageID: 20
     questionIDList: bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000
-  - name: Stage 21
+  - name: "\uB108 \uC9C0\uAE08 \uC810\uC2EC \uBA39\uB2C8?"
     stageID: 21
     questionIDList: c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000
-  - name: Stage 22
+  - name: "\uB108 \uD559\uAD50 \uAC00\uB2C8?"
     stageID: 22
     questionIDList: d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000
-  - name: Stage 23
+  - name: "\uADF8\uAC00 \uB098\uB97C \uC0AC\uB791\uD560\uAE4C?"
     stageID: 23
     questionIDList: dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000
-  - name: Stage 24
+  - name: "\uADF8\uB140\uAC00 \uD55C\uAD6D\uC744 \uC88B\uC544\uD560\uAE4C?"
     stageID: 24
     questionIDList: e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000
-  - name: Stage 25
+  - name: "\uCDA5\uB2C8?"
     stageID: 25
     questionIDList: f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000
-  - name: Stage 26
+  - name: "\uBC30\uACE0\uD504\uB2C8?"
     stageID: 26
     questionIDList: fb000000fc000000fd000000fe000000ff0000000001000001010000020100000301000004010000
-  - name: Stage 27
+  - name: "\uC878\uB9AC\uB2C8?"
     stageID: 27
     questionIDList: 05010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e010000
-  - name: Stage 28
+  - name: "\uBA4B\uC788\uB2C8?"
     stageID: 28
     questionIDList: 0f010000100100001101000012010000130100001401000015010000160100001701000018010000
-  - name: Stage 29
+  - name: "\uC219\uC81C \uD558\uB2C8?"
     stageID: 29
     questionIDList: 190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000
-  - name: Stage 30
+  - name: "\uC5B8\uC81C, \uC5B4\uB514\uC11C, \uBB34\uC5C7\uC744, \uC5B4\uB5BB\uAC8C,
+      \uC65C, \uB204\uAC00."
     stageID: 30
     questionIDList: 230100002401000025010000260100002701000028010000290100002a0100002b0100002c010000
-  - name: Stage 31
+  - name: "\uC77C, \uC774, \uC0BC..."
     stageID: 31
     questionIDList: 2d0100002e0100002f01000030010000310100003201000033010000340100003501000036010000
-  - name: Stage 32
+  - name: "\uC2ED, \uC774\uC2ED, \uC0BC\uC2ED..."
     stageID: 32
     questionIDList: 3701000038010000390100003a0100003b0100003c0100003d0100003e0100003f01000040010000
-  - name: Stage 33
+  - name: "\uBC31, \uC774\uBC31, \uC0BC\uBC31..."
     stageID: 33
     questionIDList: 4101000042010000430100004401000045010000460100004701000048010000490100004a010000
-  - name: Stage 34
+  - name: "\uCC9C, \uC774\uCC9C, \uC0BC\uCC9C..."
     stageID: 34
     questionIDList: 4b0100004c0100004d0100004e0100004f0100005001000051010000520100005301000054010000
-  - name: Stage 35
+  - name: "\uB9CC, \uC774\uB9CC, \uC0BC\uB9CC..."
     stageID: 35
     questionIDList: 55010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e010000
-  - name: Stage 36
+  - name: "\uC5B5, \uC774\uC5B5, \uC0BC\uC5B5..."
     stageID: 36
     questionIDList: 5f010000600100006101000062010000630100006401000065010000660100006701000068010000
-  - name: Stage 37
+  - name: "\uD558\uB098, \uB458, \uC14B..."
     stageID: 37
     questionIDList: 690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000
-  - name: Stage 38
+  - name: "\uC5F4, \uC2A4\uBB3C, \uC11C\uB978..."
     stageID: 38
     questionIDList: 730100007401000075010000760100007701000078010000790100007a0100007b0100007c010000
-  - name: Stage 39
+  - name: "\uCC9C \uC6D0, \uB450 \uAC1C, 1 \uC6D4."
     stageID: 39
     questionIDList: 7d0100007e0100007f01000080010000810100008201000083010000840100008501000086010000
-  - name: Stage 40
+  - name: "\uD55C\uAC1C \uB354, \uD55C\uBC88\uB9CC, 1\uBC88."
     stageID: 40
     questionIDList: 8701000088010000890100008a0100008b0100008c0100008d0100008e0100008f01000090010000
   - name: Stage 41
@@ -3615,7 +3608,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4526,7 +4519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4709,8 +4702,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412fef1cbec323e44b4936be3f205807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questionPanel: {fileID: 257111309}
+  answerPanel: {fileID: 1991620796}
   messageBox: {fileID: 1935482996}
   resultPanel: {fileID: 1685969307}
+  failCount: 0
 --- !u!4 &2093579347
 Transform:
   m_ObjectHideFlags: 0

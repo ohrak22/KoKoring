@@ -4,90 +4,61 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
+using UnityEngine.UI;
 
-public class MapTool : MonoBehaviour {
+public class MapTool : MonoBehaviour
+{
+	public Transform mapRoot;
+	public List<Sprite> mapImages;
+
+	public GameObject defaultMap;
+	public GameObject defaultStage;
 
 	public List<StageLevelData> levelDataList;
-	public List<Map> MapList;
+	public List<Map> mapList;
 
 	[ContextMenu("Setup Maps")]
 	public void SetupMaps()
 	{
-		int index = 0;
-		int lastStar = 0;
+		int stageNumber = 1;
 
-		foreach (Map map in MapList)
+		for (int i = 0; i < mapList.Count; i++)
 		{
-			foreach (StageButton stage in map.stageButtonList)
+			if (mapList[i] == null)
 			{
-				if (levelDataList.Count <= index)
-				{
-					AddLevelData();
-				}
-
-				if (lastStar > 0 && levelDataList[index].starCount == 0)
-				{
-					stage.SetupForMapTool(levelDataList[index], true);
-				}
-				else
-				{
-					stage.SetupForMapTool(levelDataList[index]);
-				}
-
-				lastStar = levelDataList[index].starCount;
-				index++;
+				GameObject go = Instantiate(defaultMap);
+				go.transform.SetParent(mapRoot);
+				go.transform.localPosition = Vector3.zero;
+				go.transform.localScale = Vector3.one;
+				mapList[i] = go.GetComponent<Map>();
 			}
-		}
-	}
 
-	[ContextMenu("Add Level Data")]
-	public void AddLevelData()
-	{
-		StageLevelData data = new StageLevelData();
-		data.id = levelDataList.Count + 1;
-		data.stageName = "Stage " + data.id;
+			mapList[i].name = "Map " + (i + 1);
+			mapList[i].transform.SetAsFirstSibling();
+			mapList[i].GetComponent<Image>().sprite = mapImages[i % mapImages.Count];
 
-		levelDataList.Add(data);
-	}
-
-	[ContextMenu("Add Level Data x 10")]
-	public void AddLevelDataTen()
-	{
-		for (int i = 0; i < 10; i++)
-		{
-			StageLevelData data = new StageLevelData();
-			data.id = levelDataList.Count + 1;
-			data.stageName = "Stage " + data.id;
-
-			levelDataList.Add(data);
-		}
-	}
-
-	[ContextMenu("Load Level Data")]
-	public void LoadLevelData()
-	{
-		TextAsset ta = Resources.Load("GameDatas/StageLevelData") as TextAsset;
-
-		levelDataList = JsonConvert.DeserializeObject<List<StageLevelData>>(ta.text);
-	}
-
-	[ContextMenu("Save Level Data")]
-	public void SaveLevelData()
-	{
-		string json = JsonConvert.SerializeObject(levelDataList);
-
-		string path = "Assets/Resources/GameDatas/StageLevelData.json";
-
-		using (FileStream fs = new FileStream(path, FileMode.Create))
-		{
-			using (StreamWriter writer = new StreamWriter(fs))
+			// Stage Button Setup.
+			Map map = mapList[i].GetComponent<Map>();
+			for (int stage = 0; stage < map.stageButtonList.Count; stage++)
 			{
-				writer.Write(json);
-			}
-		}
+				if (map.stageButtonList[stage] == null)
+				{
+					GameObject go = Instantiate(defaultStage);
+					go.transform.SetParent(map.transform);
+					Vector3 pos = Vector3.zero;
+					pos.y = stage * 100;
+					go.transform.localPosition = pos;
+					go.transform.localScale = Vector3.one;
+					map.stageButtonList[stage] = go.GetComponent<StageButton>();
+				}
 
-#if UNITY_EDITOR
-		UnityEditor.AssetDatabase.Refresh();
-#endif
+				map.stageButtonList[stage].Setup(stageNumber, defaultStage.GetComponent<StageButton>());
+				stageNumber++;
+
+			}
+
+		}
+		
 	}
+	
 }
