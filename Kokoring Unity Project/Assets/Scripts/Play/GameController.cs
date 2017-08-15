@@ -18,17 +18,10 @@ public class GameController {
 	}
 
 	public PlayScene playScene;
+	public MapScene mapScene;
 
-	public void ClickAnswerButton(bool isCorrect)
+	public void ClickAnswerButton(AnswerData answerData)
 	{
-		playScene.ClickAnswerButton(isCorrect);
+		playScene.ClickAnswerButton(answerData);
 	}
-
-
-
-
-
-
-
-
 }

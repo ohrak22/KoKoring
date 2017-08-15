@@ -4,21 +4,21 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 
 [System.Serializable]
-public class QuestionLevelData
+public class StageLevelData
 {
 	public string name;
 	public int stageID;
-	public List<int> questionIDList = new List<int>();
+	public List<QuestionData> roundList = new List<QuestionData>();
 }
 
 public class QuestionLevelDataTable
 {
-	public Dictionary<int, QuestionLevelData> dataDic = new Dictionary<int, QuestionLevelData>();
-	public List<QuestionLevelData> dataList;
+	public Dictionary<int, StageLevelData> dataDic = new Dictionary<int, StageLevelData>();
+	public List<StageLevelData> dataList;
 
 	public bool isLoaded = false;
 
-	public QuestionLevelData this[int stageID]
+	public StageLevelData this[int stageID]
 	{
 		get
 		{
@@ -33,9 +33,9 @@ public class QuestionLevelDataTable
 
 	public void Load()
 	{
-		TextAsset ta = Resources.Load("GameDatas/QuestionLevelData") as TextAsset;
+		TextAsset ta = Resources.Load("GameDatas/LevelData") as TextAsset;
 
-		dataList = JsonConvert.DeserializeObject<List<QuestionLevelData>>(ta.text);
+		dataList = JsonConvert.DeserializeObject<List<StageLevelData>>(ta.text);
 
 		for (int i = 0; i < dataList.Count; i++)
 		{

@@ -28,12 +28,21 @@ public class QuestionDataTool : MonoBehaviour {
 #endif
 	}
 
+	[ContextMenu("Load Question Data")]
+	public void LoadQuestionData()
+	{
+		string path = "GameDatas/QuestionData";
+
+		TextAsset ta = Resources.Load<TextAsset>(path);
+		questionDataList = JsonConvert.DeserializeObject<List<QuestionData>>(ta.text);
+	}
+
 	[ContextMenu("Setup Question Ids")]
 	public void SetupQuestionIDs()
 	{
 		for (int i = 0; i < questionDataList.Count; i++)
 		{
-			questionDataList[i].questionID = i + 1;
+			questionDataList[i].question = "Translate this sentence.";
 		}
 	}
 
@@ -54,12 +63,10 @@ public class QuestionDataTool : MonoBehaviour {
 			}
 			if (hasCorrect == false)
 			{
-				Debug.Log("don't have correct questionID: " + questionDataList[i].questionID);
 			}
 
 			if (correctCount > 1)
 			{
-				Debug.Log("correctCount over: " + questionDataList[i].questionID);
 			}
 		}
 

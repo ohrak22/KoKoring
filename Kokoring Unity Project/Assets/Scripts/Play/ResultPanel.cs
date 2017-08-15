@@ -25,16 +25,21 @@ public class ResultPanel : MonoBehaviour {
 
 		if (data.starCount > 0)
 		{
-			if (!GameDataManager.Instance.userData.clearStageDic.ContainsKey(GlobalVeriables.curStageID))
+			UserStageData stage = new UserStageData();
+			stage.stageKey = GlobalVeriables.curStageID;
+			stage.starCount = data.starCount;
+			if (GameDataManager.Instance.userData.clearStageDic.ContainsKey(GlobalVeriables.curStageID))
 			{
-				UserStageData stage = new UserStageData();
-				stage.stageKey = GlobalVeriables.curStageID;
-				stage.starCount = data.starCount;
+				GameDataManager.Instance.userData.clearStageDic[stage.stageKey] = stage;
+			}
+			else
+			{
 				GameDataManager.Instance.userData.clearStageDic.Add(stage.stageKey, stage);
 				GameDataManager.Instance.userData.currentStage = stage.stageKey + 1;
-
-				GameDataManager.Instance.SaveUserData();
 			}
+
+			GameDataManager.Instance.SaveUserData();
+
 			context.color = Color.black;
 		}
 		else

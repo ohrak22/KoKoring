@@ -6,13 +6,14 @@ using System.Collections.Generic;
 
 public class PlayScene : MonoBehaviour
 {
+	public HeartPanel heartPanel;
 	public QuestionPanel questionPanel;
 	public AnswerPanel answerPanel;
 	public MessageBox messageBox;
 	public ResultPanel resultPanel;
 
-	QuestionLevelData levelData;
-	public Queue<int> questionIDs;
+	StageLevelData levelData;
+	public int roundIndex = 0;
 	public int failCount = 0;
 
 	void Start()
@@ -25,8 +26,9 @@ public class PlayScene : MonoBehaviour
 	{
 		GameController.Instance.playScene = this;
 		failCount = 0;
-		QuestionLevelData levelData = GameDataManager.Instance.questionLevelTable[GlobalVeriables.curStageID];
-		questionIDs = new Queue<int>(levelData.questionIDList);
+		roundIndex = 0;
+		levelData = GameDataManager.Instance.questionLevelTable[GlobalVeriables.curStageID];
+		heartPanel.Init();
 	}
 
 	public void ClearQuestion()
@@ -39,20 +41,20 @@ public class PlayScene : MonoBehaviour
 	public void RoundStart()
 	{
 		ClearQuestion();
-		SetupQuestion(questionIDs.Dequeue());
+		SetupQuestion();
 	}
 
 	public void NextRound()
 	{
 		ClearQuestion();
-		SetupQuestion(questionIDs.Dequeue());
+		SetupQuestion();
 	}
 
-	public void SetupQuestion(int questionID)
+	public void SetupQuestion()
 	{
-		QuestionData questionData = GameDataManager.Instance.questionTable[questionID];
-		questionPanel.Setup(questionData);
-		answerPanel.Setup(questionData);
+		questionPanel.Setup(levelData.roundList[roundIndex]);
+		answerPanel.Setup(levelData.roundList[roundIndex]);
+		roundIndex++;
 	}
 	
 	public void ShowCompletedResult()
@@ -81,20 +83,36 @@ public class PlayScene : MonoBehaviour
 	{
 		answerPanel.BlockButtons();
 		messageBox.Show("correct!.", Color.green);
-
+		
 		yield return new WaitForSeconds(2f);
 
-		NextRound();
+		if (levelData.roundList.Count > roundIndex)
+		{
+			NextRound();
+		}
+		else
+		{
+			ShowCompletedResult();
+		}
 	}
 
 	IEnumerator NotCorrect()
 	{
 		answerPanel.BlockButtons();
 		messageBox.Show("It is not the correct answer.", Color.red);
+		heartPanel.DecreaseHeart();
 
 		yield return new WaitForSeconds(2f);
 
-		answerPanel.UnblockButtons();
+		failCount++;
+		if (failCount >= 3)
+		{
+			ShowFailedResult();
+		}
+		else
+		{
+			answerPanel.UnblockButtons();
+		}
 
 	}
 
@@ -103,30 +121,17 @@ public class PlayScene : MonoBehaviour
 		messageBox.Show(message, Color.red);
 	}
 
-	public void ClickAnswerButton(bool isCorrect)
+	public void ClickAnswerButton(AnswerData answerData)
 	{
-		if (isCorrect)
+		questionPanel.SetAnswerText(answerData.answer, answerData.isCorrect);
+
+		if (answerData.isCorrect)
 		{
-			if (questionIDs.Count > 0)
-			{
-				StartCoroutine(Correct());
-			}
-			else
-			{
-				ShowCompletedResult();
-			}
+			StartCoroutine(Correct());
 		}
 		else
 		{
-			failCount++;
-			if (failCount >= 3)
-			{
-				ShowFailedResult();
-			}
-			else
-			{
-				StartCoroutine(NotCorrect());
-			}
+			StartCoroutine(NotCorrect());
 		}
 	}
 

@@ -60,6 +60,8 @@ public class StageButton : MonoBehaviour {
 	{
 		GlobalVeriables.curStageID = stageID;
 
+		GameController.Instance.mapScene.SpanHeart();
+
 		SceneManager.LoadScene("Play");
 	}
 

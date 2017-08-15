@@ -118,7 +118,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -100, y: 0}
-  m_SizeDelta: {x: 90, y: 94.28571}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22652209
 MonoBehaviour:
@@ -139,7 +139,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 974f9e08a9455324dbf95817491f18c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -215,6 +215,127 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &114058689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 114058690}
+  - 222: {fileID: 114058692}
+  - 114: {fileID: 114058691}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &114058690
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114058689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 607796080}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114058691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114058689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &114058692
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114058689}
+--- !u!1 &117815916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 117815917}
+  - 114: {fileID: 117815918}
+  m_Layer: 5
+  m_Name: HeartPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &117815917
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117815916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 607796080}
+  - {fileID: 875679262}
+  - {fileID: 1926933737}
+  m_Father: {fileID: 1884156941}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 71.719, y: 554}
+  m_SizeDelta: {x: 537, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &117815918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117815916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e06d6e62c47cfd42aeb9b39b68d0b22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartList:
+  - {fileID: 607796081}
+  - {fileID: 875679263}
+  - {fileID: 1926933738}
+  index: 0
 --- !u!1 &122884356
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,1523 +410,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122884356}
---- !u!1 &178000792
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 178000794}
-  - 114: {fileID: 178000793}
-  - 114: {fileID: 178000795}
-  m_Layer: 0
-  m_Name: QuestionDataTool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &178000793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178000792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365a4281bc6c7e946ba55ead2811091c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionDataList:
-  - sentence: Hello.
-    questionID: 1
-    type: 0
-    answers:
-    - answer: "\uC548\uB155\uD558\uC138\uC694."
-      isCorrect: 1
-    - answer: "\uC798\uAC00\uC694."
-      isCorrect: 0
-    - answer: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
-      isCorrect: 0
-  - sentence: Nice to meet you.
-    questionID: 2
-    type: 0
-    answers:
-    - answer: "\uB0B4\uC77C \uBD10\uC694."
-      isCorrect: 0
-    - answer: "\uC815\uB9D0 \uACE0\uB9C8\uC6CC\uC694."
-      isCorrect: 0
-    - answer: "\uB9CC\uB098\uC11C \uBC18\uAC00\uC6CC\uC694."
-      isCorrect: 1
-  - sentence: Thank you.
-    questionID: 3
-    type: 0
-    answers:
-    - answer: "\uACE0\uB9C8\uC6CC\uC694."
-      isCorrect: 1
-    - answer: "\uC548\uB155."
-      isCorrect: 0
-    - answer: "\uC798\uC790\uC694."
-      isCorrect: 0
-    - answer: "\uC88B\uC740 \uC544\uCE68."
-      isCorrect: 0
-  - sentence: "\uC548\uB155\uD558\uC138\uC694."
-    questionID: 4
-    type: 0
-    answers:
-    - answer: Hello.
-      isCorrect: 1
-    - answer: Good bye.
-      isCorrect: 0
-    - answer: Thanks.
-      isCorrect: 0
-  - sentence: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
-    questionID: 5
-    type: 0
-    answers:
-    - answer: Thank you.
-      isCorrect: 1
-    - answer: Good morning.
-      isCorrect: 0
-    - answer: Hello.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-  - sentence: "\uB9CC\uB098\uC11C \uBC18\uAC00\uC6CC\uC694."
-    questionID: 6
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Nice to meet you.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68."
-    questionID: 7
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Nice to meet you.
-      isCorrect: 1
-  - sentence: "\uC798\uAC00\uC694."
-    questionID: 8
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Nice to meet you.
-      isCorrect: 1
-  - sentence: "\uC798\uC790\uC694."
-    questionID: 9
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Nice to meet you.
-      isCorrect: 1
-  - sentence: I.
-    questionID: 10
-    type: 0
-    answers:
-    - answer: "\uB098."
-      isCorrect: 1
-    - answer: "\uC5EC\uC790."
-      isCorrect: 0
-    - answer: "\uADF8."
-      isCorrect: 0
-  - sentence: You.
-    questionID: 11
-    type: 0
-    answers:
-    - answer: "\uB098."
-      isCorrect: 0
-    - answer: "\uB0A8\uC790."
-      isCorrect: 0
-    - answer: "\uB108."
-      isCorrect: 1
-  - sentence: Apple.
-    questionID: 12
-    type: 0
-    answers:
-    - answer: "\uBA39\uB2E4."
-      isCorrect: 0
-    - answer: "\uC0AC\uACFC."
-      isCorrect: 1
-    - answer: "\uC544\uAE30."
-      isCorrect: 0
-  - sentence: Eat.
-    questionID: 13
-    type: 0
-    answers:
-    - answer: "\uB9C8\uC154\uC694."
-      isCorrect: 0
-    - answer: "\uC5EC\uC790."
-      isCorrect: 0
-    - answer: "\uBA39\uC5B4\uC694."
-      isCorrect: 1
-    - answer: "\uC18C\uB144."
-      isCorrect: 0
-  - sentence: "\uB098."
-    questionID: 14
-    type: 0
-    answers:
-    - answer: You.
-      isCorrect: 0
-    - answer: Boy.
-      isCorrect: 0
-    - answer: I.
-      isCorrect: 1
-  - sentence: "\uB108."
-    questionID: 15
-    type: 0
-    answers:
-    - answer: You.
-      isCorrect: 1
-    - answer: Apple.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Boy.
-      isCorrect: 0
-  - sentence: "\uC0AC\uACFC."
-    questionID: 16
-    type: 0
-    answers:
-    - answer: You.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Apple.
-      isCorrect: 1
-    - answer: I.
-      isCorrect: 0
-  - sentence: "\uBA39\uC5B4\uC694."
-    questionID: 17
-    type: 0
-    answers:
-    - answer: Buy.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Eat.
-      isCorrect: 1
-    - answer: You.
-      isCorrect: 0
-  - sentence: "\uB098\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4\uC694."
-    questionID: 18
-    type: 0
-    answers:
-    - answer: I drink coffee.
-      isCorrect: 0
-    - answer: I am a boy.
-      isCorrect: 0
-    - answer: I eat apple.
-      isCorrect: 1
-    - answer: You eat apple.
-      isCorrect: 0
-  - sentence: You eat Apple!
-    questionID: 19
-    type: 0
-    answers:
-    - answer: "\uB098\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4\uC694!"
-      isCorrect: 0
-    - answer: "\uB098\uB294 \uC8FC\uC2A4\uB97C \uB9C8\uC154\uC694!"
-      isCorrect: 0
-    - answer: "\uB108\uB294 \uACFC\uC77C\uC744 \uBA39\uC5B4!"
-      isCorrect: 0
-    - answer: "\uB108\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4!"
-      isCorrect: 1
-  - sentence: He.
-    questionID: 20
-    type: 0
-    answers:
-    - answer: "\uADF8\uB140."
-      isCorrect: 0
-    - answer: "\uB0A8\uC790."
-      isCorrect: 0
-    - answer: "\uADF8."
-      isCorrect: 1
-  - sentence: She.
-    questionID: 21
-    type: 0
-    answers:
-    - answer: "\uADF8\uB140."
-      isCorrect: 1
-    - answer: "\uC5EC\uC790."
-      isCorrect: 0
-    - answer: "\uB098."
-      isCorrect: 0
-  - sentence: Coffee.
-    questionID: 22
-    type: 0
-    answers:
-    - answer: "\uCEE4\uD53C."
-      isCorrect: 1
-    - answer: "\uADF8\uB140."
-      isCorrect: 0
-    - answer: "\uC0AC\uACFC."
-      isCorrect: 0
-    - answer: "\uC548\uB155."
-      isCorrect: 0
-  - sentence: Drink.
-    questionID: 23
-    type: 0
-    answers:
-    - answer: "\uB9C8\uC154\uC694."
-      isCorrect: 1
-    - answer: "\uC0AC\uACFC."
-      isCorrect: 0
-    - answer: "\uADF8\uB140."
-      isCorrect: 0
-    - answer: "\uBA39\uC5B4\uC694."
-      isCorrect: 0
-  - sentence: "\uADF8\uB294."
-    questionID: 24
-    type: 0
-    answers:
-    - answer: She.
-      isCorrect: 0
-    - answer: Boy.
-      isCorrect: 0
-    - answer: Eat.
-      isCorrect: 0
-    - answer: He.
-      isCorrect: 1
-  - sentence: "\uADF8\uB140\uB294."
-    questionID: 25
-    type: 0
-    answers:
-    - answer: Woman.
-      isCorrect: 0
-    - answer: She.
-      isCorrect: 1
-    - answer: Girl.
-      isCorrect: 0
-    - answer: I.
-      isCorrect: 0
-  - sentence: "\uCEE4\uD53C."
-    questionID: 26
-    type: 0
-    answers:
-    - answer: Boy.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Coffee.
-      isCorrect: 1
-    - answer: Apple.
-      isCorrect: 0
-  - sentence: "\uB9C8\uC154\uC694."
-    questionID: 27
-    type: 0
-    answers:
-    - answer: Buy.
-      isCorrect: 0
-    - answer: Drink.
-      isCorrect: 1
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Eat.
-      isCorrect: 0
-  - sentence: "\uADF8\uB140\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC154\uC694."
-    questionID: 28
-    type: 0
-    answers:
-    - answer: He goes to Apple.
-      isCorrect: 0
-    - answer: She drinks coffee.
-      isCorrect: 1
-    - answer: She eats an apple.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 0
-  - sentence: He drinks coffee.
-    questionID: 29
-    type: 0
-    answers:
-    - answer: "\uC18C\uB144\uC740 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
-      isCorrect: 0
-    - answer: "\uADF8\uB140\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
-      isCorrect: 0
-    - answer: "\uADF8\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
-      isCorrect: 1
-    - answer: "\uB098\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
-      isCorrect: 0
-  - sentence: We.
-    questionID: 30
-    type: 0
-    answers:
-    - answer: "\uADF8."
-      isCorrect: 0
-    - answer: "\uB098."
-      isCorrect: 0
-    - answer: "\uC6B0\uB9AC."
-      isCorrect: 1
-  - sentence: They.
-    questionID: 31
-    type: 0
-    answers:
-    - answer: "\uADF8\uB140."
-      isCorrect: 0
-    - answer: "\uADF8."
-      isCorrect: 0
-    - answer: "\uADF8\uB4E4."
-      isCorrect: 1
-    - answer: "\uC6B0\uB9AC."
-      isCorrect: 0
-  - sentence: Read.
-    questionID: 32
-    type: 0
-    answers:
-    - answer: "\uC77D\uB294\uB2E4."
-      isCorrect: 1
-    - answer: "\uB9C8\uC2E0\uB2E4."
-      isCorrect: 0
-    - answer: "\uC2E0\uBB38."
-      isCorrect: 0
-    - answer: "\uBB3C."
-      isCorrect: 0
-  - sentence: Book.
-    questionID: 33
-    type: 0
-    answers:
-    - answer: "\uCC45."
-      isCorrect: 1
-    - answer: "\uCEE4\uD53C."
-      isCorrect: 0
-    - answer: "\uC0AC\uACFC."
-      isCorrect: 0
-    - answer: "\uC2E0\uBB38."
-      isCorrect: 0
-  - sentence: "\uC6B0\uB9AC."
-    questionID: 34
-    type: 0
-    answers:
-    - answer: They.
-      isCorrect: 0
-    - answer: We.
-      isCorrect: 1
-    - answer: me.
-      isCorrect: 0
-    - answer: You.
-      isCorrect: 0
-  - sentence: "\uADF8\uB4E4."
-    questionID: 35
-    type: 0
-    answers:
-    - answer: We.
-      isCorrect: 0
-    - answer: I.
-      isCorrect: 0
-    - answer: They.
-      isCorrect: 1
-    - answer: He.
-      isCorrect: 0
-  - sentence: "\uC77D\uB294\uB2E4."
-    questionID: 36
-    type: 0
-    answers:
-    - answer: Good.
-      isCorrect: 0
-    - answer: Read.
-      isCorrect: 1
-    - answer: Book.
-      isCorrect: 0
-    - answer: Eat.
-      isCorrect: 0
-  - sentence: "\uCC45."
-    questionID: 37
-    type: 0
-    answers:
-    - answer: Book.
-      isCorrect: 1
-    - answer: Newspaper.
-      isCorrect: 0
-    - answer: Apple.
-      isCorrect: 0
-    - answer: Eat.
-      isCorrect: 0
-  - sentence: "\uC6B0\uB9AC\uB294 \uCC45\uC744 \uC77D\uB294\uB2E4."
-    questionID: 38
-    type: 0
-    answers:
-    - answer: We read a book.
-      isCorrect: 1
-    - answer: We read the newspaper.
-      isCorrect: 0
-    - answer: She reads the newspaper.
-      isCorrect: 0
-    - answer: She reads a book.
-      isCorrect: 0
-  - sentence: They read books.
-    questionID: 39
-    type: 0
-    answers:
-    - answer: "\uADF8\uB4E4\uC740 \uC2E0\uBB38\uC744 \uC77D\uB294\uB2E4."
-      isCorrect: 0
-    - answer: "\uADF8\uB4E4\uC740 \uCEE4\uD53C\uB97C \uB9C8\uC2E0\uB2E4."
-      isCorrect: 0
-    - answer: "\uADF8\uB4E4\uC740 \uCC45\uC744 \uBC84\uB9B0\uB2E4."
-      isCorrect: 0
-    - answer: "\uADF8\uB4E4\uC740 \uCC45\uC744 \uC77D\uB294\uB2E4."
-      isCorrect: 1
-  - sentence: Movie.
-    questionID: 40
-    type: 0
-    answers:
-    - answer: "\uADF9\uC7A5."
-      isCorrect: 0
-    - answer: "\uC601\uD654."
-      isCorrect: 1
-  - sentence: Newspaper.
-    questionID: 41
-    type: 0
-    answers:
-    - answer: "\uCC45."
-      isCorrect: 0
-    - answer: "\uD559\uAD50."
-      isCorrect: 0
-    - answer: "\uC2E0\uBB38."
-      isCorrect: 1
-  - sentence: See.
-    questionID: 42
-    type: 0
-    answers:
-    - answer: "\uC77D\uB2E4."
-      isCorrect: 0
-    - answer: "\uBCF4\uB2E4."
-      isCorrect: 1
-    - answer: "\uBA39\uB2E4."
-      isCorrect: 0
-    - answer: "\uB274\uC2A4."
-      isCorrect: 0
-  - sentence: Don't see.
-    questionID: 43
-    type: 0
-    answers:
-    - answer: "\uBCF8\uB2E4."
-      isCorrect: 0
-    - answer: "\uC77D\uB294\uB2E4."
-      isCorrect: 0
-    - answer: "\uC548\uBCF8\uB2E4."
-      isCorrect: 1
-    - answer: "\uC54A\uC77D\uB294\uB2E4."
-      isCorrect: 0
-  - sentence: "\uC601\uD654."
-    questionID: 44
-    type: 0
-    answers:
-    - answer: School.
-      isCorrect: 0
-    - answer: Movie.
-      isCorrect: 1
-    - answer: He.
-      isCorrect: 0
-    - answer: Here.
-      isCorrect: 0
-  - sentence: "\uC2E0\uBB38."
-    questionID: 45
-    type: 0
-    answers:
-    - answer: Newspaper.
-      isCorrect: 1
-    - answer: Move.
-      isCorrect: 0
-    - answer: Drink.
-      isCorrect: 0
-    - answer: Sea.
-      isCorrect: 0
-  - sentence: "\uBCF4\uB2E4."
-    questionID: 46
-    type: 0
-    answers:
-    - answer: Bread.
-      isCorrect: 0
-    - answer: See.
-      isCorrect: 1
-    - answer: Eat.
-      isCorrect: 0
-    - answer: Good.
-      isCorrect: 0
-  - sentence: "\uC548\uBCF8\uB2E4."
-    questionID: 47
-    type: 0
-    answers:
-    - answer: See.
-      isCorrect: 0
-    - answer: Don't buy.
-      isCorrect: 0
-    - answer: Don't eat.
-      isCorrect: 0
-    - answer: Don't see.
-      isCorrect: 1
-  - sentence: "\uADF8\uB294 \uC601\uD654\uB97C \uBCF8\uB2E4."
-    questionID: 48
-    type: 0
-    answers:
-    - answer: He does not have a movie.
-      isCorrect: 0
-    - answer: He watches a movie.
-      isCorrect: 1
-    - answer: He reads the newspaper.
-      isCorrect: 0
-    - answer: Do you eat bread?
-      isCorrect: 0
-  - sentence: She does not read the newspaper.
-    questionID: 49
-    type: 0
-    answers:
-    - answer: "\uADF8\uB140\uB294 \uC2E0\uBB38\uC744 \uC548 \uC77D\uB294\uB2E4."
-      isCorrect: 1
-    - answer: "\uADF8\uB140\uB294 \uC601\uD654\uB97C \uC548\uBCF8\uB2E4."
-      isCorrect: 0
-    - answer: "\uADF8\uB140\uB294 \uC2E0\uBB38\uC744 \uC77D\uB294\uB2E4."
-      isCorrect: 0
-    - answer: "\uADF8\uB140\uB294 \uC2E0\uBB38\uC744 \uBCF8\uB2E4."
-      isCorrect: 0
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 50
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 51
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 52
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 53
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 54
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 55
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 56
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 57
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 58
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 59
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 60
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 61
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 62
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 63
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 64
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 65
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 66
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 67
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 68
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 69
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 70
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 71
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 72
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 73
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 74
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 75
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 76
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 77
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 78
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 79
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 80
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 81
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 82
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 83
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 84
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 85
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 86
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 87
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 88
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 89
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 90
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 91
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 92
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 93
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 94
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 95
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 96
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 97
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 98
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
-  - sentence: "\uC88B\uC740 \uC544\uCE68\uC785\uB2C8\uB2E4."
-    questionID: 99
-    type: 0
-    answers:
-    - answer: Good night.
-      isCorrect: 0
-    - answer: Bye.
-      isCorrect: 0
-    - answer: Thank you.
-      isCorrect: 0
-    - answer: Good morning.
-      isCorrect: 1
---- !u!4 &178000794
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178000792}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.740355, y: -27.514502, z: 90}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
---- !u!114 &178000795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178000792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0938ec127a82e34ab660ce2c4e05300, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionLevelList:
-  - name: "\uC548\uB155\uD558\uC138\uC694."
-    stageID: 1
-    questionIDList: 010000000200000003000000040000000500000006000000
-  - name: "\uB098\uB294 \uC0AC\uACFC\uB97C \uBA39\uC5B4\uC694."
-    stageID: 2
-    questionIDList: 0b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000
-  - name: "\uADF8\uB294 \uCEE4\uD53C\uB97C \uB9C8\uC154\uC694."
-    stageID: 3
-    questionIDList: 15000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000
-  - name: "\uC6B0\uB9AC\uB294 \uD559\uAD50\uC5D0 \uAC00\uC694."
-    stageID: 4
-    questionIDList: 1f000000200000002100000022000000230000002400000025000000260000002700000028000000
-  - name: "\uB098\uB294 \uB0A8\uC790\uC5D0\uC694."
-    stageID: 5
-    questionIDList: 290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000
-  - name: "\uC544\uC774\uB294 \uC5C4\uB9C8\uB97C \uC0AC\uB791\uD574\uC694."
-    stageID: 6
-    questionIDList: 330000003400000035000000360000003700000038000000390000003a0000003b0000003c000000
-  - name: "\uC544\uAE30\uB294 \uC7A5\uB0A8\uAC10\uC744 \uC88B\uC544\uD574\uC694."
-    stageID: 7
-    questionIDList: 3d0000003e0000003f00000040000000410000004200000043000000440000004500000046000000
-  - name: "\uB098\uB294 \uC0E4\uC6CC\uB97C \uC2EB\uC5B4\uD574\uC694."
-    stageID: 8
-    questionIDList: 4700000048000000490000004a0000004b0000004c0000004d0000004e0000004f00000050000000
-  - name: "\uB098\uB294 \uBC84\uC2A4\uB97C \uD0C0\uC694."
-    stageID: 9
-    questionIDList: 5100000052000000530000005400000055000000560000005700000058000000590000005a000000
-  - name: "\uB098\uB294 \uCC45\uC744 \uC77D\uC5B4\uC694."
-    stageID: 10
-    questionIDList: 5b0000005c0000005d0000005e0000005f0000006000000061000000620000006300000064000000
-  - name: "\uB098\uB294 \uACE0\uAE30\uB97C \uC548\uBA39\uC5B4\uC694."
-    stageID: 11
-    questionIDList: 65000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e000000
-  - name: "\uB098\uB294 \uC8FC\uC2A4\uB97C \uC548\uB9C8\uC154\uC694."
-    stageID: 12
-    questionIDList: 6f000000700000007100000072000000730000007400000075000000760000007700000078000000
-  - name: "\uB098\uB294 \uADF9\uC7A5\uC5D0 \uC548\uAC00\uC694."
-    stageID: 13
-    questionIDList: 790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000
-  - name: "\uC800\uB294 \uD559\uC0DD\uC774 \uC544\uB2C8\uC5D0\uC694."
-    stageID: 14
-    questionIDList: 830000008400000085000000860000008700000088000000890000008a0000008b0000008c000000
-  - name: "\uC800\uB294 \uB18D\uAD6C\uB97C \uC548\uC88B\uC544\uD574\uC694."
-    stageID: 15
-    questionIDList: 8d0000008e0000008f00000090000000910000009200000093000000940000009500000096000000
-  - name: "\uC6B0\uB9AC\uB294 \uC9C0\uAC11 \uC548\uC0AC\uC694."
-    stageID: 16
-    questionIDList: 9700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000
-  - name: "\uC6B0\uB9AC\uB294 \uC120\uD48D\uAE30 \uC548\uD314\uC544\uC694."
-    stageID: 17
-    questionIDList: a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000
-  - name: "\uADF8\uB294 \uAE40\uCE58 \uC548\uB9CC\uB4E4\uC5B4\uC694."
-    stageID: 18
-    questionIDList: ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000
-  - name: "\uADF8\uB140\uB294 \uC601\uD654 \uC548\uBD10\uC694."
-    stageID: 19
-    questionIDList: b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000
-  - name: "\uC544\uB2C8\uC694."
-    stageID: 20
-    questionIDList: bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000
-  - name: "\uB108 \uC9C0\uAE08 \uC810\uC2EC \uBA39\uB2C8?"
-    stageID: 21
-    questionIDList: c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000
-  - name: "\uB108 \uD559\uAD50 \uAC00\uB2C8?"
-    stageID: 22
-    questionIDList: d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000
-  - name: "\uADF8\uAC00 \uB098\uB97C \uC0AC\uB791\uD560\uAE4C?"
-    stageID: 23
-    questionIDList: dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000
-  - name: "\uADF8\uB140\uAC00 \uD55C\uAD6D\uC744 \uC88B\uC544\uD560\uAE4C?"
-    stageID: 24
-    questionIDList: e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000
-  - name: "\uCDA5\uB2C8?"
-    stageID: 25
-    questionIDList: f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000
-  - name: "\uBC30\uACE0\uD504\uB2C8?"
-    stageID: 26
-    questionIDList: fb000000fc000000fd000000fe000000ff0000000001000001010000020100000301000004010000
-  - name: "\uC878\uB9AC\uB2C8?"
-    stageID: 27
-    questionIDList: 05010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e010000
-  - name: "\uBA4B\uC788\uB2C8?"
-    stageID: 28
-    questionIDList: 0f010000100100001101000012010000130100001401000015010000160100001701000018010000
-  - name: "\uC219\uC81C \uD558\uB2C8?"
-    stageID: 29
-    questionIDList: 190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000
-  - name: "\uC5B8\uC81C, \uC5B4\uB514\uC11C, \uBB34\uC5C7\uC744, \uC5B4\uB5BB\uAC8C,
-      \uC65C, \uB204\uAC00."
-    stageID: 30
-    questionIDList: 230100002401000025010000260100002701000028010000290100002a0100002b0100002c010000
-  - name: "\uC77C, \uC774, \uC0BC..."
-    stageID: 31
-    questionIDList: 2d0100002e0100002f01000030010000310100003201000033010000340100003501000036010000
-  - name: "\uC2ED, \uC774\uC2ED, \uC0BC\uC2ED..."
-    stageID: 32
-    questionIDList: 3701000038010000390100003a0100003b0100003c0100003d0100003e0100003f01000040010000
-  - name: "\uBC31, \uC774\uBC31, \uC0BC\uBC31..."
-    stageID: 33
-    questionIDList: 4101000042010000430100004401000045010000460100004701000048010000490100004a010000
-  - name: "\uCC9C, \uC774\uCC9C, \uC0BC\uCC9C..."
-    stageID: 34
-    questionIDList: 4b0100004c0100004d0100004e0100004f0100005001000051010000520100005301000054010000
-  - name: "\uB9CC, \uC774\uB9CC, \uC0BC\uB9CC..."
-    stageID: 35
-    questionIDList: 55010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e010000
-  - name: "\uC5B5, \uC774\uC5B5, \uC0BC\uC5B5..."
-    stageID: 36
-    questionIDList: 5f010000600100006101000062010000630100006401000065010000660100006701000068010000
-  - name: "\uD558\uB098, \uB458, \uC14B..."
-    stageID: 37
-    questionIDList: 690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000
-  - name: "\uC5F4, \uC2A4\uBB3C, \uC11C\uB978..."
-    stageID: 38
-    questionIDList: 730100007401000075010000760100007701000078010000790100007a0100007b0100007c010000
-  - name: "\uCC9C \uC6D0, \uB450 \uAC1C, 1 \uC6D4."
-    stageID: 39
-    questionIDList: 7d0100007e0100007f01000080010000810100008201000083010000840100008501000086010000
-  - name: "\uD55C\uAC1C \uB354, \uD55C\uBC88\uB9CC, 1\uBC88."
-    stageID: 40
-    questionIDList: 8701000088010000890100008a0100008b0100008c0100008d0100008e0100008f01000090010000
-  - name: Stage 41
-    stageID: 41
-    questionIDList: 9101000092010000930100009401000095010000960100009701000098010000990100009a010000
-  - name: Stage 42
-    stageID: 42
-    questionIDList: 9b0100009c0100009d0100009e0100009f010000a0010000a1010000a2010000a3010000a4010000
-  - name: Stage 43
-    stageID: 43
-    questionIDList: a5010000a6010000a7010000a8010000a9010000aa010000ab010000ac010000ad010000ae010000
-  - name: Stage 44
-    stageID: 44
-    questionIDList: af010000b0010000b1010000b2010000b3010000b4010000b5010000b6010000b7010000b8010000
-  - name: Stage 45
-    stageID: 45
-    questionIDList: b9010000ba010000bb010000bc010000bd010000be010000bf010000c0010000c1010000c2010000
-  - name: Stage 46
-    stageID: 46
-    questionIDList: c3010000c4010000c5010000c6010000c7010000c8010000c9010000ca010000cb010000cc010000
-  - name: Stage 47
-    stageID: 47
-    questionIDList: cd010000ce010000cf010000d0010000d1010000d2010000d3010000d4010000d5010000d6010000
-  - name: Stage 48
-    stageID: 48
-    questionIDList: d7010000d8010000d9010000da010000db010000dc010000dd010000de010000df010000e0010000
-  - name: Stage 49
-    stageID: 49
-    questionIDList: e1010000e2010000e3010000e4010000e5010000e6010000e7010000e8010000e9010000ea010000
-  - name: Stage 50
-    stageID: 50
-    questionIDList: eb010000ec010000ed010000ee010000ef010000f0010000f1010000f2010000f3010000f4010000
-  - name: Stage 51
-    stageID: 51
-    questionIDList: f5010000f6010000f7010000f8010000f9010000fa010000fb010000fc010000fd010000fe010000
-  - name: Stage 52
-    stageID: 52
-    questionIDList: ff010000000200000102000002020000030200000402000005020000060200000702000008020000
-  - name: Stage 53
-    stageID: 53
-    questionIDList: 090200000a0200000b0200000c0200000d0200000e0200000f020000100200001102000012020000
-  - name: Stage 54
-    stageID: 54
-    questionIDList: 130200001402000015020000160200001702000018020000190200001a0200001b0200001c020000
-  - name: Stage 55
-    stageID: 55
-    questionIDList: 1d0200001e0200001f02000020020000210200002202000023020000240200002502000026020000
-  - name: Stage 56
-    stageID: 56
-    questionIDList: 2702000028020000290200002a0200002b0200002c0200002d0200002e0200002f02000030020000
-  - name: Stage 57
-    stageID: 57
-    questionIDList: 3102000032020000330200003402000035020000360200003702000038020000390200003a020000
-  - name: Stage 58
-    stageID: 58
-    questionIDList: 3b0200003c0200003d0200003e0200003f0200004002000041020000420200004302000044020000
-  - name: Stage 59
-    stageID: 59
-    questionIDList: 45020000460200004702000048020000490200004a0200004b0200004c0200004d0200004e020000
-  - name: Stage 60
-    stageID: 60
-    questionIDList: 4f020000500200005102000052020000530200005402000055020000560200005702000058020000
-  - name: Stage 61
-    stageID: 61
-    questionIDList: 590200005a0200005b0200005c0200005d0200005e0200005f020000600200006102000062020000
-  - name: Stage 62
-    stageID: 62
-    questionIDList: 630200006402000065020000660200006702000068020000690200006a0200006b0200006c020000
-  - name: Stage 63
-    stageID: 63
-    questionIDList: 6d0200006e0200006f02000070020000710200007202000073020000740200007502000076020000
-  - name: Stage 64
-    stageID: 64
-    questionIDList: 7702000078020000790200007a0200007b0200007c0200007d0200007e0200007f02000080020000
-  - name: Stage 65
-    stageID: 65
-    questionIDList: 8102000082020000830200008402000085020000860200008702000088020000890200008a020000
-  - name: Stage 66
-    stageID: 66
-    questionIDList: 8b0200008c0200008d0200008e0200008f0200009002000091020000920200009302000094020000
-  - name: Stage 67
-    stageID: 67
-    questionIDList: 95020000960200009702000098020000990200009a0200009b0200009c0200009d0200009e020000
-  - name: Stage 68
-    stageID: 68
-    questionIDList: 9f020000a0020000a1020000a2020000a3020000a4020000a5020000a6020000a7020000a8020000
-  - name: Stage 69
-    stageID: 69
-    questionIDList: a9020000aa020000ab020000ac020000ad020000ae020000af020000b0020000b1020000b2020000
-  - name: Stage 70
-    stageID: 70
-    questionIDList: b3020000b4020000b5020000b6020000b7020000b8020000b9020000ba020000bb020000bc020000
-  - name: Stage 71
-    stageID: 71
-    questionIDList: bd020000be020000bf020000c0020000c1020000c2020000c3020000c4020000c5020000c6020000
-  - name: Stage 72
-    stageID: 72
-    questionIDList: c7020000c8020000c9020000ca020000cb020000cc020000cd020000ce020000cf020000d0020000
-  - name: Stage 73
-    stageID: 73
-    questionIDList: d1020000d2020000d3020000d4020000d5020000d6020000d7020000d8020000d9020000da020000
-  - name: Stage 74
-    stageID: 74
-    questionIDList: db020000dc020000dd020000de020000df020000e0020000e1020000e2020000e3020000e4020000
-  - name: Stage 75
-    stageID: 75
-    questionIDList: e5020000e6020000e7020000e8020000e9020000ea020000eb020000ec020000ed020000ee020000
-  - name: Stage 76
-    stageID: 76
-    questionIDList: ef020000f0020000f1020000f2020000f3020000f4020000f5020000f6020000f7020000f8020000
-  - name: Stage 77
-    stageID: 77
-    questionIDList: f9020000fa020000fb020000fc020000fd020000fe020000ff020000000300000103000002030000
-  - name: Stage 78
-    stageID: 78
-    questionIDList: 030300000403000005030000060300000703000008030000090300000a0300000b0300000c030000
-  - name: Stage 79
-    stageID: 79
-    questionIDList: 0d0300000e0300000f03000010030000110300001203000013030000140300001503000016030000
-  - name: Stage 80
-    stageID: 80
-    questionIDList: 1703000018030000190300001a0300001b0300001c0300001d0300001e0300001f03000020030000
-  - name: Stage 81
-    stageID: 81
-    questionIDList: 2103000022030000230300002403000025030000260300002703000028030000290300002a030000
-  - name: Stage 82
-    stageID: 82
-    questionIDList: 2b0300002c0300002d0300002e0300002f0300003003000031030000320300003303000034030000
-  - name: Stage 83
-    stageID: 83
-    questionIDList: 35030000360300003703000038030000390300003a0300003b0300003c0300003d0300003e030000
-  - name: Stage 84
-    stageID: 84
-    questionIDList: 3f030000400300004103000042030000430300004403000045030000460300004703000048030000
-  - name: Stage 85
-    stageID: 85
-    questionIDList: 490300004a0300004b0300004c0300004d0300004e0300004f030000500300005103000052030000
-  - name: Stage 86
-    stageID: 86
-    questionIDList: 530300005403000055030000560300005703000058030000590300005a0300005b0300005c030000
-  - name: Stage 87
-    stageID: 87
-    questionIDList: 5d0300005e0300005f03000060030000610300006203000063030000640300006503000066030000
-  - name: Stage 88
-    stageID: 88
-    questionIDList: 6703000068030000690300006a0300006b0300006c0300006d0300006e0300006f03000070030000
-  - name: Stage 89
-    stageID: 89
-    questionIDList: 7103000072030000730300007403000075030000760300007703000078030000790300007a030000
-  - name: Stage 90
-    stageID: 90
-    questionIDList: 7b0300007c0300007d0300007e0300007f0300008003000081030000820300008303000084030000
-  - name: Stage 91
-    stageID: 91
-    questionIDList: 85030000860300008703000088030000890300008a0300008b0300008c0300008d0300008e030000
-  - name: Stage 92
-    stageID: 92
-    questionIDList: 8f030000900300009103000092030000930300009403000095030000960300009703000098030000
-  - name: Stage 93
-    stageID: 93
-    questionIDList: 990300009a0300009b0300009c0300009d0300009e0300009f030000a0030000a1030000a2030000
-  - name: Stage 94
-    stageID: 94
-    questionIDList: a3030000a4030000a5030000a6030000a7030000a8030000a9030000aa030000ab030000ac030000
-  - name: Stage 95
-    stageID: 95
-    questionIDList: ad030000ae030000af030000b0030000b1030000b2030000b3030000b4030000b5030000b6030000
-  - name: Stage 96
-    stageID: 96
-    questionIDList: b7030000b8030000b9030000ba030000bb030000bc030000bd030000be030000bf030000c0030000
-  - name: Stage 97
-    stageID: 97
-    questionIDList: c1030000c2030000c3030000c4030000c5030000c6030000c7030000c8030000c9030000ca030000
-  - name: Stage 98
-    stageID: 98
-    questionIDList: cb030000cc030000cd030000ce030000cf030000d0030000d1030000d2030000d3030000d4030000
-  - name: Stage 99
-    stageID: 99
-    questionIDList: d5030000d6030000d7030000d8030000d9030000da030000db030000dc030000dd030000de030000
-  - name: Stage 100
-    stageID: 100
-    questionIDList: df030000e0030000e1030000e2030000e3030000e4030000e5030000e6030000e7030000e8030000
 --- !u!1 &257111306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,7 +441,7 @@ RectTransform:
   m_Children:
   - {fileID: 1592220491}
   m_Father: {fileID: 1884156941}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -150}
@@ -2223,6 +827,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478448266}
+--- !u!1 &572639049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 572639050}
+  - 222: {fileID: 572639052}
+  - 114: {fileID: 572639051}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &572639050
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572639049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1926933737}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &572639051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572639049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &572639052
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572639049}
 --- !u!1 &574787348
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,6 +1049,64 @@ MonoBehaviour:
   m_PreferredHeight: 70
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
+--- !u!1 &607796079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 607796080}
+  - 222: {fileID: 607796083}
+  - 111: {fileID: 607796081}
+  m_Layer: 5
+  m_Name: Heart1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &607796080
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607796079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 114058690}
+  m_Father: {fileID: 117815917}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -270, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &607796081
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607796079}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2862ce78d4e5d2c42b928b81cb87948a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2862ce78d4e5d2c42b928b81cb87948a, type: 2}
+  - {fileID: 7400000, guid: 47981e0e7c3ebf94b9cc6736d040090b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!222 &607796083
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607796079}
 --- !u!1 &688966736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2714,6 +1444,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -21}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &875679261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 875679262}
+  - 222: {fileID: 875679265}
+  - 111: {fileID: 875679263}
+  m_Layer: 5
+  m_Name: Heart2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &875679262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875679261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1034838898}
+  m_Father: {fileID: 117815917}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -165, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &875679263
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875679261}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2862ce78d4e5d2c42b928b81cb87948a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2862ce78d4e5d2c42b928b81cb87948a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!222 &875679265
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875679261}
 --- !u!1 &938663091
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,7 +1882,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 100, y: 0.00002002716}
-  m_SizeDelta: {x: 90, y: 94.28571}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990067254
 MonoBehaviour:
@@ -3116,7 +1903,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 974f9e08a9455324dbf95817491f18c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3204,6 +1991,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1009467513}
+--- !u!1 &1034838897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1034838898}
+  - 222: {fileID: 1034838900}
+  - 114: {fileID: 1034838899}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1034838898
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034838897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 875679262}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1034838899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034838897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1034838900
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034838897}
 --- !u!1 &1082332615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,7 +2573,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000008106232, y: 0.00002002716}
-  m_SizeDelta: {x: 90, y: 94.28571}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576511179
 MonoBehaviour:
@@ -3739,7 +2594,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 974f9e08a9455324dbf95817491f18c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3932,7 +2787,7 @@ RectTransform:
   m_Children:
   - {fileID: 973312503}
   m_Father: {fileID: 1884156941}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.00004386902, y: 0.000030517214}
@@ -4340,17 +3195,75 @@ RectTransform:
   m_Children:
   - {fileID: 375327480}
   - {fileID: 802551355}
+  - {fileID: 117815917}
   - {fileID: 257111307}
   - {fileID: 1991620794}
   - {fileID: 1685969306}
   - {fileID: 1935482995}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1926933736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1926933737}
+  - 222: {fileID: 1926933740}
+  - 111: {fileID: 1926933738}
+  m_Layer: 5
+  m_Name: Heart3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1926933737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926933736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 572639050}
+  m_Father: {fileID: 117815917}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -64, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1926933738
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926933736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2862ce78d4e5d2c42b928b81cb87948a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2862ce78d4e5d2c42b928b81cb87948a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!222 &1926933740
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926933736}
 --- !u!1 &1931960765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4487,7 +3400,7 @@ RectTransform:
   m_Children:
   - {fileID: 1868258123}
   m_Father: {fileID: 1884156941}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4582,7 +3495,7 @@ RectTransform:
   - {fileID: 1610608606}
   - {fileID: 688966737}
   m_Father: {fileID: 1884156941}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 15}
@@ -4640,7 +3553,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000007390976, y: 0.00001859665}
-  m_SizeDelta: {x: 90, y: 94.28571}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088493024
 MonoBehaviour:
@@ -4661,7 +3574,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 974f9e08a9455324dbf95817491f18c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4702,10 +3615,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412fef1cbec323e44b4936be3f205807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heartPanel: {fileID: 117815918}
   questionPanel: {fileID: 257111309}
   answerPanel: {fileID: 1991620796}
   messageBox: {fileID: 1935482996}
   resultPanel: {fileID: 1685969307}
+  roundIndex: 0
   failCount: 0
 --- !u!4 &2093579347
 Transform:
@@ -4828,7 +3743,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 99.999985, y: 0.00002002716}
-  m_SizeDelta: {x: 90, y: 94.28571}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131222921
 MonoBehaviour:
@@ -4849,7 +3764,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 974f9e08a9455324dbf95817491f18c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4896,7 +3811,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -100.00001, y: 0.00001859665}
-  m_SizeDelta: {x: 90, y: 94.28571}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144339848
 MonoBehaviour:
@@ -4917,7 +3832,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 974f9e08a9455324dbf95817491f18c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce33a2cfe1b0bdd4d8c17c5b27ce04f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -21,17 +21,23 @@ public class GameDataManager {
 		}
 	}
 
-	public QuestionDataTable questionTable = new QuestionDataTable();
+	//public QuestionDataTable questionTable = new QuestionDataTable();
 	public QuestionLevelDataTable questionLevelTable = new QuestionLevelDataTable();
 
 	public UserData userData = new UserData();
 
 	public void LoadAll()
 	{
-		questionTable.Load();
+		//questionTable.Load();
 		questionLevelTable.Load();
 
 		LoadUserData();
+	}
+
+	public void SaveUserData(UserData data)
+	{
+		userData = data;
+		SaveUserData();
 	}
 
 	public void SaveUserData()

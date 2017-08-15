@@ -5,16 +5,22 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
 
-public class MapScene : MonoBehaviour {
+public class MapScene : MonoBehaviour
+{
+	public UserInfoPanel userInfoPanel;
 
-	void Start () {
+	void Start()
+	{
+		GameController.Instance.mapScene = this;
 
-		
+		UserData userData = GameDataManager.Instance.userData;
+
+		userInfoPanel.SetUserData(userData);
 	}
 
-	void Update () {
-	
+	public void SpanHeart()
+	{
+		userInfoPanel.SpanHeart();
 	}
 
-	
 }

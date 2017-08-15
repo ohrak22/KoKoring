@@ -22,13 +22,20 @@ public class QuestionPanel : MonoBehaviour {
 
 	public void Setup(QuestionData data)
 	{
+		answerText.text = "";
 		questionData = data;
-		if (data.type == QuestionData.QuestionType.Translate)
-		{
-			questionText.text = "Translate this sentence.";
-		}
-
+		questionText.text = data.question;
 		sentenceText.text = data.sentence;
 	}
-	
+
+	public void SetAnswerText(string text, bool correct)
+	{
+		answerText.text = text;
+		if (correct)
+			answerText.color = Color.black;
+		else
+			answerText.color = Color.red;
+
+	}
+
 }

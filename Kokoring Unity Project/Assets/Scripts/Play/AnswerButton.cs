@@ -16,6 +16,6 @@ public class AnswerButton : MonoBehaviour {
 	
 	public void Click()
 	{
-		GameController.Instance.ClickAnswerButton(answerData.isCorrect);
+		GameController.Instance.ClickAnswerButton(answerData);
 	}
 }

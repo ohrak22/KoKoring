@@ -14,7 +14,6 @@ public class MapTool : MonoBehaviour
 	public GameObject defaultMap;
 	public GameObject defaultStage;
 
-	public List<StageLevelData> levelDataList;
 	public List<Map> mapList;
 
 	[ContextMenu("Setup Maps")]
